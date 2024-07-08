@@ -1,7 +1,7 @@
 const { app, BrowserWindow } = require('electron')
 
 const path = require('path')
-const isDev = false
+const isDev = true
 
 require('@electron/remote/main').initialize()
 
@@ -15,7 +15,7 @@ function createWindow() {
       enableRemoteModule: true
     }
   })
-
+  // win.webContents.openDevTools()
   win.loadURL(
     isDev
       ? 'http://localhost:3000'
