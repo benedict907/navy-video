@@ -1,6 +1,6 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./screens/Home";
+import React from 'react'
+import { HashRouter as Router, Route, Routes } from 'react-router-dom'
+import Home from './screens/Home'
 import Details from './screens/Details'
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
         <Route path="/details" element={<Details />} />
       </Routes>
     </Router>
-  );
+  )
 }
 
-export default App;
+export default App

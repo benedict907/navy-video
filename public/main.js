@@ -1,7 +1,7 @@
 const { app, BrowserWindow } = require('electron')
 
 const path = require('path')
-const isDev =true
+const isDev = false
 
 require('@electron/remote/main').initialize()
 

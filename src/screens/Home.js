@@ -1,20 +1,51 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import Carousal from "../components/Carousal";
+import React from 'react'
+import { Link } from 'react-router-dom'
+import Slider from 'react-slick'
 
 const Home = () => {
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    autoplay: true,
+    autoplaySpeed: 3000
+  }
+
   return (
     <div>
       <div className="flex justify-center flex-col">
-        <Carousal
-          slides={[
-            "/sliderImages/1.svg",
-            "/sliderImages/2.svg",
-            "/sliderImages/3.svg",
-          ]}
-        />
+        <div className="w-full h-full">
+          <Slider {...settings}>
+            <div>
+              <img
+                className="w-screen h-screen"
+                src={'assets/sliderImages/1.svg'}
+                alt="Slide 1"
+              />
+            </div>
+            <div>
+              <img
+                className="w-screen h-screen"
+                src="assets/sliderImages/2.svg"
+                alt="Slide 2"
+              />
+            </div>
+            <div>
+              <img
+                className="w-screen h-screen"
+                src="assets/sliderImages/3.svg"
+                alt="Slide 3"
+              />
+            </div>
+          </Slider>
+        </div>
+
         <div className="absolute flex">
-          <img className="w-1/2 h-full rounded-lg" src="/sliderImages/3.svg" />
+          <img
+            className="w-1/2 h-full rounded-lg"
+            src="assets/sliderImages/3.svg"
+          />
           <div className="mx-5">
             <h1 className="text-white font-bold text-4xl">
               Declasified BOI of IN 240
@@ -35,7 +66,7 @@ const Home = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
