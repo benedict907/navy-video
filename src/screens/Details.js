@@ -23,10 +23,14 @@ const Details = () => {
       title: '03.⁠ ⁠Finding',
       url: 'assets/module_3.mp4',
       thumbnail: 'assets/thumbnail_3.svg'
+    },
+    {
+      title: '04.⁠ Recommendations',
+      url: 'assets/module_4.mp4',
+      thumbnail: 'assets/thumbnail_3.svg'
     }
   ]
   const handleKeyDown = event => {
-    console.log('handleKeyDown', playing)
     if (event.code === 'Space') {
       setPlaying(prev => !prev)
     }
@@ -47,7 +51,7 @@ const Details = () => {
         backgroundRepeat: 'no-repeat', // Ensures the image does not repeat
         backgroundPosition: 'center' // Centers the image
       }}
-      className="h-full w-full flex-row px-10 pt-10"
+      className="h-full w-full flex flex-col px-10 pt-10 overflow-hidden"
     >
       <Link to="/">
         <img
@@ -56,13 +60,13 @@ const Details = () => {
           alt="back-icon"
         />
       </Link>
-      <div className="flex justify-between items-center">
-        <div className="w-3/4">
+      <div className="flex justify-between items-center h-screen">
+        <div className="w-3/4 h-screen">
           <ReactPlayer
             url={videoClicked.url}
             playing={playing}
             width={'100%'}
-            height={'100%'}
+            height={'90%'}
             loop={false}
             controls={true}
           />
@@ -70,7 +74,7 @@ const Details = () => {
             {videoClicked.title}
           </h1>
         </div>
-        <div className="flex-col w-1/4 ms-10">
+        <div className="flex-col pb-20 w-1/4 ms-10 h-full overflow-y-auto">
           {videoList.map(item => (
             <div
               key={item.url}
@@ -78,14 +82,18 @@ const Details = () => {
                 setPlaying(false)
                 setVideoClicked(item)
               }}
-              className={`border ${videoClicked.url === item.url ? 'border-yellow-400' : 'border-gray-50'}  rounded-lg mb-10 active:opacity-50`}
+              className={`border ${videoClicked.url === item.url ? 'border-yellow-400' : 'border-gray-50'} rounded-lg mb-10 active:opacity-50`}
             >
-              <img className="" src={item.thumbnail} />
-              <div className="px-2 flex my-1">
+              <img alt="thumbnail" src={item.thumbnail} />
+              <div className="px-2 flex my-1 items-center">
                 <h1 className="text-white text-xs mr-2 font-badoni">
                   {item.title}
                 </h1>
-                <img className="w-6" src={'assets/play_button.svg'} />
+                <img
+                  alt="play-button"
+                  className="w-6"
+                  src={'assets/play_button.svg'}
+                />
               </div>
             </div>
           ))}
