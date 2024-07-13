@@ -24,14 +24,14 @@ const Home = () => {
     >
       <div className="min-h-screen flex flex-col justify-between">
         <div>
-          <h1 className="text-white text-4xl font-bold text-center mt-20 mb-5 font-badoni">
+          <h1 className="text-white text-5xl font-bold text-center mt-20 mb-5 font-badoni">
             THE AIRBORNE TACTICIANS
           </h1>
-          <h1 className="text-yellow-300 font-bold text-2xl text-center font-badoni">
+          <h1 className="text-yellow-300 font-bold text-3xl text-center font-badoni">
             NAVAL AIR OPERATIONS SCHOOL
           </h1>
           <div className="flex justify-center">
-            <img className="w-32" src="assets/logo.svg" alt="Logo" />
+            <img className="w-36" src="assets/logo.svg" alt="Logo" />
           </div>
           <h1 className="text-white text-3xl font-bold text-center font-badoni">
             SEAKING 42B BOI
