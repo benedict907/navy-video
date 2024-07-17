@@ -10,24 +10,39 @@ const Details = () => {
   const [playing, setPlaying] = useState(false)
   const videoList = [
     {
-      title: '01. PRELUDE',
+      title: '01. What happened',
       url: 'assets/module_1.mp4',
       thumbnail: 'assets/thumbnail_1.png'
     },
     {
-      title: '02 FLYING ASPECTS',
+      title: '02. Flying Aspects',
       url: 'assets/module_2.mp4',
       thumbnail: 'assets/thumbnail_2.png'
     },
     {
-      title: '03. TECHNICAL ASPECTS',
+      title: '03. Technical Aspects',
       url: 'assets/module_3.mp4',
       thumbnail: 'assets/thumbnail_3.png'
     },
     {
-      title: 'CRASH',
+      title: '04. Crash',
       url: 'assets/module_4.mp4',
-      thumbnail: 'assets/thumbnail_3.png'
+      thumbnail: 'assets/thumbnail_4.png'
+    },
+    {
+      title: '05. Causes',
+      url: 'assets/module_5.mp4',
+      thumbnail: 'assets/thumbnail_5.png'
+    },
+    {
+      title: '06. HFACS',
+      url: 'assets/module_6.mp4',
+      thumbnail: 'assets/thumbnail_6.png'
+    },
+    {
+      title: '07. Recommendations',
+      url: 'assets/module_7.mp4',
+      thumbnail: 'assets/thumbnail_7.png'
     }
   ]
   const handleKeyDown = event => {

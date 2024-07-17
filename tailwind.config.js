@@ -6,6 +6,9 @@ module.exports = {
       colors: {
         'button-colour': '#a67400'
       },
+      width: {
+        half: '50%'
+      },
       fontFamily: {
         bodoni: ['"Bodoni Moda SC"', 'monospace'],
         anton: ['"Anton"', 'sans-serif'],
