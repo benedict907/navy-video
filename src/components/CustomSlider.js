@@ -3,52 +3,52 @@ import { Link } from 'react-router-dom'
 
 const slides = [
   {
-    backgroundImage: '/assets/sliderImages/slider_1_bg.png',
-    frontImage: '/assets/sliderImages/slider_1.png'
+    backgroundImage: 'assets/sliderImages/slider_1_bg.png',
+    frontImage: 'assets/sliderImages/slider_1.png'
   },
   {
-    backgroundImage: '/assets/sliderImages/slider_2_bg.png',
-    frontImage: '/assets/sliderImages/slider_2.png'
+    backgroundImage: 'assets/sliderImages/slider_2_bg.png',
+    frontImage: 'assets/sliderImages/slider_2.png'
   },
   {
-    backgroundImage: '/assets/sliderImages/slider_3_bg.png',
-    frontImage: '/assets/sliderImages/slider_3.png'
+    backgroundImage: 'assets/sliderImages/slider_3_bg.png',
+    frontImage: 'assets/sliderImages/slider_3.png'
   },
   {
-    backgroundImage: '/assets/sliderImages/slider_4_bg.png',
-    frontImage: '/assets/sliderImages/slider_4.png'
+    backgroundImage: 'assets/sliderImages/slider_4_bg.png',
+    frontImage: 'assets/sliderImages/slider_4.png'
   },
   {
-    backgroundImage: '/assets/sliderImages/slider_5_bg.png',
-    frontImage: '/assets/sliderImages/slider_5.png'
+    backgroundImage: 'assets/sliderImages/slider_5_bg.png',
+    frontImage: 'assets/sliderImages/slider_5.png'
   },
   {
-    backgroundImage: '/assets/sliderImages/slider_6_bg.png',
-    frontImage: '/assets/sliderImages/slider_6.png'
+    backgroundImage: 'assets/sliderImages/slider_6_bg.png',
+    frontImage: 'assets/sliderImages/slider_6.png'
   },
   {
-    backgroundImage: '/assets/sliderImages/slider_7_bg.png',
-    frontImage: '/assets/sliderImages/slider_7.png'
+    backgroundImage: 'assets/sliderImages/slider_7_bg.png',
+    frontImage: 'assets/sliderImages/slider_7.png'
   },
   {
-    backgroundImage: '/assets/sliderImages/slider_8_bg.png',
-    frontImage: '/assets/sliderImages/slider_8.png'
+    backgroundImage: 'assets/sliderImages/slider_8_bg.png',
+    frontImage: 'assets/sliderImages/slider_8.png'
   },
   {
-    backgroundImage: '/assets/sliderImages/slider_9_bg.png',
-    frontImage: '/assets/sliderImages/slider_9.png'
+    backgroundImage: 'assets/sliderImages/slider_9_bg.png',
+    frontImage: 'assets/sliderImages/slider_9.png'
   },
   {
-    backgroundImage: '/assets/sliderImages/slider_10_bg.png',
-    frontImage: '/assets/sliderImages/slider_10.png'
+    backgroundImage: 'assets/sliderImages/slider_10_bg.png',
+    frontImage: 'assets/sliderImages/slider_10.png'
   },
   {
-    backgroundImage: '/assets/sliderImages/slider_11_bg.png',
-    frontImage: '/assets/sliderImages/slider_11.png'
+    backgroundImage: 'assets/sliderImages/slider_11_bg.png',
+    frontImage: 'assets/sliderImages/slider_11.png'
   },
   {
-    backgroundImage: '/assets/sliderImages/slider_12_bg.png',
-    frontImage: '/assets/sliderImages/slider_12.png'
+    backgroundImage: 'assets/sliderImages/slider_12_bg.png',
+    frontImage: 'assets/sliderImages/slider_12.png'
   }
 ]
 
@@ -89,7 +89,7 @@ const CustomSlider = () => {
       ))}
       <div className="flex flex-col justify-center items-center absolute right-12 lg:top-56 top-40">
         <img
-          src={'/assets/logo.svg'}
+          src={'assets/logo.svg'}
           className="lg:w-72 lg:h-72 w-32 h-32"
           alt="logo"
         />
